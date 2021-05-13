@@ -16,7 +16,6 @@ export default function DetailsInventoryDetail({params}) {
         })
     }, [params]);
 
-
     return (
         <div>
             <h1>{inventory.name && inventory.name}</h1>

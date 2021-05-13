@@ -9,14 +9,12 @@ export default function Details({detailsUrl, params}) {
         getAllCharacter().then(value => setCharacters([...value.data]));
     }, []);
 
-
     return (
         <div>
             {characters.map(el => {
                 if (el.id === +detailsUrl) {
                     return JSON.stringify(el);
                 }
-
             })}
         </div>
     )
