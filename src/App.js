@@ -10,8 +10,8 @@ function App() {
     return (
         <div>
             <Router>
-                <div><Link to={'Character'}>Character</Link></div>
-                <div><Link to={'Inventory'}>Inventory</Link></div>
+                <div><Link to={'/Character'}>Character</Link></div>
+                <div><Link to={'/Inventory'}>Inventory</Link></div>
 
                 <Switch>
                     <Route exact={true} path={'/Character'} render={({match: {url}}) => <Characters BaseUrl={url}/>}/>
